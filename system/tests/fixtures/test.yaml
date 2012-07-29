@@ -1,0 +1,11 @@
+simple:
+  key: value
+  
+element1:
+  keyedarray:
+    1: item1
+    2: item2
+    3: item3
+  unkeyedarray: [blake, alex, edison, leonidas]
+  key: value
+  numeric: 10234
