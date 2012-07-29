@@ -1,0 +1,1 @@
+Does your chapter collection donations online?  Would you like to?  Get started for free with <?= html::anchor('/', 'ChapterBoard') ?>.

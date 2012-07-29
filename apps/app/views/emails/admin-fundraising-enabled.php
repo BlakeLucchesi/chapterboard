@@ -1,0 +1,1 @@
+<?= $vars['site_name'] ?> just signed up for online fundraising.

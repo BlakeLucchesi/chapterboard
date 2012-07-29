@@ -1,0 +1,193 @@
+/** Hide the following on screen items **/
+#master-bar,
+#header,
+#primary,
+#secondary,
+#breadcrumbs,
+.heading ul,
+#footer,
+.no-print,
+.no-print *,
+.admin-links { display: none; }
+
+#footer-print {
+  font-size: 12px;
+  text-align: right;
+  border: 0;
+}
+
+/*
+	Calendar CSS - by Nathan Smith - www.sonspring.com
+*/
+
+/* =Basic HTML
+----------------------------------------------------------------------*/
+
+* {
+	background: #fff;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+caption {
+	text-align: center;
+	text-transform: capitalize;
+	font: small-caps 20px/30px Georgia, serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+h2 {
+  font-size: 16px;
+}
+h3, h4 {
+  font-size: 14px;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: none;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+th,
+td {
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	font-family: Verdana, sans-serif;
+	padding: 0 2px;
+	vertical-align: top;
+	width: 100px;
+	height: inherit;
+}
+
+/* =Classes
+----------------------------------------------------------------------*/
+
+div.buttons {
+	display: none;
+}
+
+tr.day {
+	font-size: 9px;
+	height: 90px;
+}
+
+tr.number {
+	font-size: 10px;
+	height: 15px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+th {
+	font-size: 11px;
+	font-variant: small-caps;
+	font-weight: normal;
+	height: 15px;
+	text-transform: capitalize;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.calendar td {
+  padding: 0;
+  font-size: 11px;
+  height: 100px;
+}
+.calendar td .day {
+  text-align: right;
+  border-bottom: 1px solid #333;
+  display: block;
+  padding: 2px;
+}
+.calendar td .event {
+  margin-bottom: 6px;
+  padding: 2px;
+}
+.calendar td .time {
+  font-weight: bold;
+}
+
+/** Budget Styles **/
+#budget table {
+  width: 700px;
+  margin-bottom: 30px;
+}
+#budget table th {
+  font-weight: bold;
+  font-size: 14px;
+}
+#budget table th.amount {
+  text-align: right;
+}
+#budget tbody tr.income-separator td {
+  padding-top: 30px;
+}
+#budget td {
+  padding: 4px;
+  font-size: 12px;
+}
+#budget td.right {
+  text-align: right;
+}
+#budget .amount {
+  width: 18%;
+}
+#budget tbody td input.amount {
+  width: 80%;
+}
+/** Member Balances **/
+#finances table {
+  width: 700px;
+  margin-bottom: 30px;
+}
+#finances th {
+  font-weight: bold;
+  text-align: left;
+}
+#finances td {
+  padding: 4px;
+  font-size: 12px;
+}
+#finances th.amount,
+#finances td.amount {
+  width: 18%;
+  text-align: right;
+}
+#finances th.right,
+#finances td.right {
+  text-align: right;
+}
+
+/** Service Event and Service Hours **/
+table {
+  width: 700px;
+  margin-bottom: 30px;
+}
+table .amount {
+  width: 18%;
+}
+table .right {
+  text-align: right;
+}
+table td {
+  padding: 4px;
+  font-size: 12px;
+}

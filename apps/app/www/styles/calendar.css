@@ -1,0 +1,21 @@
+#repeat-content label {
+  width: auto;
+}
+#repeat-content select {
+  margin: 0;
+}
+#repeat-content .radios label {
+  width: auto;
+  display: inline;
+  float: none;
+}
+#repeat-content .button a {
+  padding-top: 6px;
+}
+
+#repeat-summary {
+  font-weight: bold;
+}
+
+#event-form label.repeats { width: auto; }
+#repeat-edit { font-weight: bold; margin: 2px 0;}

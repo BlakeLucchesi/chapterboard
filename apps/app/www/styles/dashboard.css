@@ -1,0 +1,155 @@
+/** DASHBOARD **/
+
+.section-dashboard .split-left {
+  width: 570px;
+  margin-right: 30px;
+}
+
+.section-dashboard .split-right {
+  width: 310px;
+}
+
+.section-dashboard .split-right .block {
+  margin-bottom: 20px;
+}
+
+.section-dashboard h3.title {
+  font-size: 11px;
+  font-weight: bold;
+  border-bottom: 1px solid #666;
+  padding: 0 0 2px 0;
+  margin: 0;
+  color: #333;
+}
+
+.section-dashboard .block ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: outside;
+}
+
+.section-dashboard .block li {
+  list-style: none;
+  padding: 5px 7px;
+  font-size: 11px;
+  border-bottom: 1px solid #f6f6f6;
+  margin: 0;
+  text-indent: 0;
+}
+
+#dashboard-announcements ul li,
+#dashboard-forum ul li,
+#dashboard-events ul li {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 7px 7px 7px 7px;
+  background-repeat: no-repeat;
+  background-position: 6px 9px;
+  position: relative;
+}
+
+ul li .icon {
+  display: block;
+  height: 20px;
+  width: 24px;
+  position: absolute;
+}
+
+#dashboard-announcements ul li .icon { 
+  background: url(/minis/_sprite.png?v=1) no-repeat 0px -58px;
+}
+#dashboard-forum ul li .icon { 
+  top: 9px;
+  background: url(/minis/_sprite.png?v=1) no-repeat -4px -496px;
+}
+#dashboard-forum ul li.new .icon { 
+  background: url(/minis/_sprite.png?v=1) no-repeat -5px -587px;
+}
+
+#dashboard-announcements ul li .date,
+#dashboard-forum ul li .date,
+#dashboard-recruits ul li .date,
+#dashboard-events ul li .time {
+  font-size: 10px;
+  color: #555;
+  font-family: Verdana;
+  float: right;
+}
+
+#dashboard-announcements ul li .title {
+  width: 375px;
+  margin-left: 25px;
+}
+
+#dashboard-events ul li {
+  padding-left: 5px;
+}
+#dashboard-events ul li .date { 
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 32px;
+  margin-right: 2px;
+  position: absolute;
+}
+#dashboard-events ul li .title {
+  width: 375px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+#dashboard-events .attendees {
+  font-size: 11px;
+  color: #444;
+  font-style: italic;
+  margin-left: 35px;
+}
+
+#dashboard-forum ul li .title {
+  width: 375px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+#dashboard-forum ul li .meta {
+  font-size: 11px;
+  margin-left: 22px;
+  color: #444;
+  font-style: italic;
+}
+
+#dashboard-recruits .photo {
+  float: left;
+  width: 45px;
+}
+#dashboard-recruits .photo img {
+  height: 30px;
+  width: 30px;
+  padding: 1px;
+  border: 1px solid #EEE;
+  margin-top: 1px;
+}
+#dashboard-photo .photos {
+  margin-top: 10px;
+}
+#dashboard-photo .photo {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-left: 18px;
+}
+#dashboard-photo .col-1 {
+  margin-left: 0;
+}
+
+.section-dashboard .block table tbody td {
+  font-size: 11px;
+  padding: 4px 7px;
+}
+.section-dashboard .block table {
+  margin-bottom: 5px;
+}
+
+.section-dashboard table label {
+  display: inline;
+  font-size: 10px;
+  width: auto;
+}

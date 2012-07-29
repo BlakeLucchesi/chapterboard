@@ -1,0 +1,30 @@
+<?php defined('SYSPATH') OR die('No direct access allowed.'); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Undergoing Maintenance | ChapterBoard</title>
+  	<link rel="stylesheet" href="/styles/login.css" type="text/css" media="screen" charset="utf-8" />
+  </head>
+  <body>
+    <div id="logo" class="clearfix">
+      <img src="/images/logo-large.gif" alt="ChapterBoard" />
+    </div>
+    <div id="wrap" class="clearfix">
+      <div id="wrap-inner">
+        <div class="content">
+          <center>
+            <h2>Down for Maintenance</h2>                    
+            <p>For more information about this outage: <a href="http://status.chapterboard.com/">status update page</a></p>
+          </center>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="info">
+      ChapterBoard is a communication and organization tool for Fraternity and Sororities.  <?= html::anchor(Kohana::config('app.public_url'), 'Find out more &raquo;') ?>
+    </div>
+
+  </body>
+</html>

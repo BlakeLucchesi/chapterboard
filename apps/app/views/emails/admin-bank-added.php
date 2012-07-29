@@ -1,0 +1,1 @@
+New bank account information provided by: <?= $vars['site_name'] ?>

@@ -1,0 +1,23 @@
+sites:
+  1:
+    user_id: 1
+    reg_code: test
+    school_id: 561
+    chapter_id: 75
+    timezone: America/Los_Angeles
+    status: 1
+    finances: 1
+    bank_name: WELLS FARGO
+    routing_number: 12700007
+    account_number: 1111
+  2:
+    user_id: 2
+    reg_code: test
+    school_id: 561
+    chapter_id: 78
+    timezone: America/Los_Angeles
+    status: 1
+    finances: 1
+    bank_name: BANK OF AMERICA
+    routing_number: 1270000345
+    account_number: 34234234

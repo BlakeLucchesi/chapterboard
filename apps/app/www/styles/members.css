@@ -1,0 +1,183 @@
+/** MEMBERS **/
+.member-roster .heading {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 15px;
+}
+
+.member-roster .split-left {
+  width: 630px;
+}
+.member-roster .split-right {
+  padding-top: 60px;
+  width: 240px;
+}
+
+.member-roster #members {
+  border-top:1px solid #DDDDDD;
+}
+#member-search-form input[type=text] {
+  width: 140px;
+}
+
+#member-search-form input {
+  margin: 0 5px 0 0;
+}
+
+#members-roster #members {
+  border-top: 1px solid #DDD;
+}
+
+#members-roster .member {
+  border: 1px solid #DDD;
+  border-top: 0;
+  padding: 7px;
+  position: relative;
+  height: 64px;
+}
+#members-roster .member-filter {
+  padding: 8px;
+  height: auto;
+}
+
+#members-roster .size {
+  padding: 1px 0;
+  text-align: center;
+  width: 30px;
+  font-size: 11px;
+  border-bottom: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#members-roster #empty {
+  height: auto;
+}
+
+#members-roster h3.member-name {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+}
+
+#members-roster .student-id {
+  position: absolute;
+  top: 10px;
+  left: 450px;
+  font-size: 10px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#members-roster .photo {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+
+#members-roster .photo img {
+  padding: 1px;
+  border: 1px solid #ddd;
+  width: 60px;
+  height: 60px;
+}
+
+#members-roster .information {
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  width: 185px;
+  overflow: hidden;
+}
+
+#members-roster .email a:link,
+#members-roster .email a:visited {
+  color: #333;
+}
+
+#members-roster .email a:hover {
+  color: #00435c;
+}
+
+#members-roster .address {
+  position: absolute;
+  bottom: 10px;
+  left: 270px;
+  width: 180px;
+}
+
+#members-roster .meta {
+  position: absolute;
+  top: 30px;
+  left: 450px;
+  width: 175px;
+}
+
+#members-roster #members.type-leadership {
+  border: 0;
+}
+#members-roster #members.type-leadership .member-position {
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  background-color: #EEE;
+  display: inline;
+  padding: 2px 50px 2px 8px;
+}
+#members-roster #members.type-leadership .member {
+  border: 1px solid #CCC;
+  margin: 0 0 14px 0;
+}
+
+
+/** Stats **/
+#member-stats .content {
+  padding: 0;
+}
+
+#member-stats label {
+  float: left;
+  width: 120px;
+  margin-right: 10px;
+}
+
+#member-stats h3 {
+  font-style: italic;
+}
+
+#member-stats .table-data {
+  margin-left: 10px;
+}
+
+#member-stats .table-data .row {
+  padding: 3px;
+  clear: both;
+}
+
+/** Invites **/
+#members-invite .split-left {
+  width: 450px;
+}
+#members-invite .split-right {
+  width: 430px;
+}
+
+#invite-form th,
+#invite-form td {
+  text-align: left;
+  padding: 5px;
+}
+
+#invite-form select {
+  margin: 2px 0 0 0;
+}
+
+#invite-form .error {
+  margin: 0;
+}
+#invite-form .error input {
+  border: 1px solid #900;
+}

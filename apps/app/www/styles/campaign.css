@@ -1,0 +1,62 @@
+/* @override http://app.chapterdev.com/styles/donate.css? */
+
+/** campaign **/
+#header .site-name {
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+}
+#header #header-logo {
+  color: #EEE;
+  float: right;
+}
+#main {
+  margin-top: 1em;
+  border-top: 1px solid #DDD;
+}
+
+#campaign-page .split-left {
+  width: 56%;
+}
+#campaign-page .split-right {
+  width: 42%;
+}
+#campaign-description {
+  font-size: 13px;
+  line-height: 1.5em;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+#campaign-description h1,
+#campaign-description h2,
+#campaign-description h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+#campaign-description .campaign-picture {
+  float: left;
+  margin: .5em 1em .25em 0;
+}
+
+#campaign-page #notes-input {
+  margin-top: 1em;
+}
+
+#share-links {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EEE;
+  position: relative;
+}
+#share-links #share-email {
+  font-size: 12px;
+  margin-right: 1em;
+  position: absolute;
+  top: 3px;
+  width: 150px;
+}
+#share-links img {
+  vertical-align: text-bottom;
+}

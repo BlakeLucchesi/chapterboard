@@ -1,0 +1,1 @@
+<div class="footer">Printed from ChapterBoard.com</div>

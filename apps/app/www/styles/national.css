@@ -1,0 +1,28 @@
+/** Secondary Navigation Icons **/
+#secondary .chapter-rosters { background-position: 0 -357px; }
+#secondary .member-search { background-position: 0 -1350px; }
+
+#secondary .service-by-chapter { background-position: 0 -420px; }
+#secondary .top-contributors { background-position: 0 -388px; }
+
+#secondary .files { background-position: 0 -1226px; }
+#secondary .add-folder { background-position: 0 -223px; }
+
+/** Members search form **/
+#search { margin-right: 10px; }
+#search form { display: inline; }
+#search form input[type="text"] { width: 150px; }
+
+#members-roster .split-left {
+  width: 63%;
+}
+#members-roster .split-right {
+  width: 34%;
+}
+#members-roster .member .address {
+  width: 290px;
+}
+#members-roster .member .size {
+  width: auto;
+  padding: 1px 5px;
+}

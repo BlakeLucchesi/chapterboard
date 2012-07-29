@@ -1,0 +1,365 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: small;
+  background: #00435c;
+  text-align: center;
+  -webkit-text-size-adjust: none;
+  margin: 4px 0;
+  padding: 0;
+}
+
+img { border: 0; }
+
+/** Login **/
+#login-logo {
+  text-align: center;
+}
+.login-errors {
+  margin: 0 0 8px 0;
+  padding: 8px;
+  background-color: #f5da9f;
+  border: 1px solid #e5ba5e;
+}
+#login-block {
+  padding: 8px 8px 8px 14px;
+}
+#login-block .form-item {
+  clear: both;
+}
+#login-block label {
+  display: block;
+  font-size: 1.1em;
+}
+#login-block input[type=text],
+#login-block input[type=email],
+#login-block input[type=password] {
+  font-size: 1.3em;
+  width: 90%;
+}
+#login-block input {
+  margin-bottom: 5px;
+}
+#login-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: square inside;
+}
+#login-block label.checkbox {
+  float: left;
+}
+#login-block input[type=submit] {
+  font-size: 1.2em;
+  float: right;
+  margin-right: 10%;
+}
+
+/** Wrapper **/
+#wrapper {
+  text-align: left;
+  margin: 5px auto;
+  background: #FFF;
+  border: 1px solid #333;
+}
+#wrapper-inner {
+  padding: 8px;
+}
+#wrapper a {
+  color: #00435c;
+}
+
+/** Header/Logo/Nav **/
+#nav {
+  margin: 8px 0 8px 4px;
+  text-align: left;
+}
+#nav img {
+  vertical-align: middle;
+}
+#nav ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#nav li {
+  display: inline;
+  padding: 2px 4px;
+}
+#nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+#nav a.active {
+  font-weight: bold;
+}
+/** Secondary **/
+.secondary {
+  margin: 2px 0 12px 0;
+}
+.secondary span {
+  font-size: .9em;
+  margin: 0 12px 0 0;
+}
+.secondary .active {
+  font-weight: bold;
+}
+
+.system-messages div {
+  margin: 0 0 8px 0;
+  padding: 8px;
+}
+.system-messages .message-success {
+  background-color: #cce4cb;
+  border: 1px solid #afd0ae;
+}
+.system-messages .message-error {
+  background-color: #f5da9f;
+  border: 1px solid #e5ba5e;
+}
+
+/** Content **/
+#body {
+  overflow: hidden;
+}
+
+#body h2, #body h3 {
+  font-size: 1.1em;
+  margin: 0 0 .5em 0;
+}
+
+#body h2 .nav {
+  font-size: .9em;
+  font-weight: normal;
+  margin: 0 3px;
+}
+#body h4 {
+  margin-bottom: .2em;
+}
+#body .content {
+  line-height: 1.5em;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+.right {
+  float: right;
+}
+
+a.button {
+  background: transparent url('/images/bg_button_a.gif') no-repeat scroll top right;
+  color: #444;
+  float: right;
+  display: block;
+  font: normal 12px arial, sans-serif;
+  height: 24px;
+  margin-right: 6px;
+  padding-right: 18px; /* sliding doors padding */
+  text-decoration: none;
+}
+
+a.button span {
+  background: transparent url('/images/bg_button_span.gif') no-repeat;
+  display: block;
+  line-height: 14px;
+  padding: 5px 0 5px 18px;
+}
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+div.items div.item {
+  margin: 8px 0;
+}
+div.items div.boxed {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EEE;
+}
+div.items div.item .title {
+  font-size: 1.1em;
+}
+
+div.items div.item .meta {
+  color: #444;
+}
+
+/** Forms **/
+textarea {
+  height: 80px;
+  width: 95%;
+}
+
+/** Events **/
+#events-nav span {
+  margin: 0 5px;
+}
+
+#events .date-header {
+  background: #EEE;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 5px;
+  padding: 2px 4px;
+}
+
+#events .item .title,
+#events .item .meta {
+  padding: 0 4px;
+}
+
+#signup-form {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #666;
+}
+
+#signups {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
+
+#signups .member {
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+#signups .member-photo {
+  float: left;
+  width: 35px;
+}
+
+/** Topics **/
+#forum .new {
+  background: url(/minis/star.png) no-repeat;
+}
+#forum .read {
+  background: url(/minis/star_dark.png) no-repeat;
+}
+#forum div.item {
+  background-position: 0 3px;
+  padding-left: 22px;
+}
+
+/** Comments **/
+#topic h2 { margin: 0; }
+#topic .topic-header,
+#comments .comment-header {
+  background-color: #F8F8F8;
+  border: 1px solid #CCC;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 5px;
+  line-height: 1.4em;
+}
+#topic .author-photo,
+#comments .author-photo {
+  float: left;
+  width: 40px;
+}
+#topic .author-photo img,
+#comments .author-photo img {
+  border: 1px solid #999;
+}
+#topic .post-date,
+#comments .post-date {
+  font-size: .8em;
+  color: #333;
+}
+#topic .topic-body,
+#comments .comment-body {
+  padding: 0 5px 5px;
+}
+#topic .attachments,
+#comments .attachments {
+  padding: 0 10px 15px 10px;
+}
+
+#topic-poll {
+  padding: 0 10px 15px 10px;
+}
+#topic-poll label {
+  display: block;
+  margin-bottom: 5px;
+}
+#topic-poll .choice {
+  margin-bottom: 5px;
+}
+#topic-poll .bar,
+#topic-poll .text {
+  display: inline;
+}
+
+/** Recruits **/
+#recruits .photo {
+  float: left;
+  width: 40px;
+  height: 35px;
+}
+#recruits .photo img {
+  border: 1px solid #999;
+}
+
+#recruit .recruit-actions {
+  margin: 10px 0;
+}
+#recruit .recruit-actions span {
+  margin: 0 5px;
+}
+#recruit .topic-body {
+  padding: 8px;
+}
+#recruit .meta .photo {
+  float: left;
+  width: 115px;
+}
+
+/** Members **/
+#members #search form { margin: 0; }
+#members .letter {
+  background: #EEE;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 5px;
+  padding: 2px 4px;
+}
+#members .item {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+/** Pager **/
+.pagination { font-size: 1.1em; }
+.pagination span { margin-right: 5px; }
+.pagination a { margin: 0 0 0 20px; }
+
+/** Footer **/
+#footer {
+  line-height: 1.8em;
+  color: #FFF;
+}
+#footer a:link, #footer a:visited {
+  color: #FFF;
+}
+
+/** CLEAR-FIX **/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}

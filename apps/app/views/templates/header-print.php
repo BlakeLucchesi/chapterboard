@@ -1,0 +1,1 @@
+<h1><?= $this->title ? $this->title : 'ChapterBoard'; ?></h1>

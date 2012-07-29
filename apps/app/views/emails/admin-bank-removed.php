@@ -1,0 +1,1 @@
+Bank account archived by: <?= $vars['site_name'] ?>
