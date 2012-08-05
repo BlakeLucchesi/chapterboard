@@ -72,9 +72,9 @@ class A2_Core extends Acl_Core {
 	{
 		// Read config
 		$config          = Kohana::config($config_name);
-		
-		$this->guest_role = $config['guest_role'];
-		$this->a1 				= call_user_func_array(array($config['a1'][0],'instance'),isset($config['a1'][1]) ? $config['a1'][1] : NULL);
+		// var_dump($config);die();
+  	$this->guest_role = $config['guest_role'];
+  	$this->a1         = A1::instance();
 
 		// Add Guest Role as role
 		if(!array_key_exists($this->guest_role,$config['roles']))

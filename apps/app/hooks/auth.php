@@ -72,12 +72,6 @@ class auth {
         $acl->allow($rule->group_id, $rule->resource, $rule->privilege);
       }
     }
-    
-    // Special permissions that load based on certain conditions.
-    $sites = array(141, 963);
-    if ( ! in_array(kohana::config('chapterboard.site_id'), $sites)) {
-      $acl->allow('user', 'event', 'add');
-    }
   }
 }
 
