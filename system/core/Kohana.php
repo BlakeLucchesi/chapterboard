@@ -498,15 +498,34 @@ final class Kohana {
 		if (empty(self::$log) OR self::$configuration['core']['log_threshold'] < 1)
 			return;
 
-		do {
+		// Filename of the log
+		$filename = self::log_directory().date('Y-m-d').'.log'.EXT;
+
+		if ( ! is_file($filename))
+		{
+			// Write the SYSPATH checking header
+			file_put_contents($filename,
+				'<?php defined(\'SYSPATH\') or die(\'No direct script access.\'); ?>'.PHP_EOL.PHP_EOL);
+
+			// Prevent external writes
+			chmod($filename, 0644);
+		}
+
+		// Messages to write
+		$messages = array();
+
+		do
+		{
 			// Load the next mess
-			list ($date, $type, $text, $data) = array_shift(self::$log);
-      if ( ! empty($data)) {
-        $text .= PHP_EOL.print_r($data, true);
-      }
-      log::system('Kohana', $text, $type);
+			list ($date, $type, $text) = array_shift(self::$log);
+
+			// Add a new message line
+			$messages[] = $date.' --- '.$type.': '.$text;
 		}
 		while ( ! empty(self::$log));
+
+		// Write messages to log file
+		file_put_contents($filename, implode(PHP_EOL, $messages).PHP_EOL, FILE_APPEND);
 	}
 
 	/**

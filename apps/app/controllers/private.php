@@ -123,28 +123,17 @@ abstract class Private_Controller extends Controller_Core {
       }
       
       // If we are a root user, set that up, otherwise add google tracking.
-      if ($this->user->has_role('root')) {
-        $this->sites = ORM::factory('site')->select_list();
-      }
-      else {
-        url::redirect('http://www.chapterboard.com');
-        
-        if ($this->user->has_role('national')) {
-          // $this->sites = array($this->user->site_id => 'National Office') + ORM::factory('site')->chapter_select($this->site->chapter_id);
-          $this->sites = ORM::factory('site')->chapter_select($this->site->chapter_id);
-        }
-        ga::custom_var(1, 'Chapter', $this->site->chapter->name, 2);
-        ga::custom_var(2, 'School', $this->site->school->name, 2);
-        ga::custom_var(3, 'Account', $this->site->name(), 2);
-        ga::custom_var(4, 'Action', $this->_gaq_action());
+      if ($this->user->has_role('national')) {
+        $this->sites = array($this->user->site_id => 'National Office') + ORM::factory('site')->chapter_select($this->site->chapter_id);
       }
     }
     
     // If user is not authenticated: send them to login, register or reset password.
     $all_public_routes = $public_routes = array_merge(Kohana::config('a2.public_routes'), Kohana::config('a2.public_only_routes'));
     if ( ! $this->auth->logged_in() && ! in_array(Router::$controller .'/'. Router::$method, $all_public_routes)) {
-      if (request::is_ajax())
+      if (request::is_ajax()) {
         response::json(FALSE, 'Please log in.', (object)array());
+      }
 
       $this->session->set('redirect', URI::$current_uri); // Setup url redirection upon login.
       url::redirect('login');
@@ -155,14 +144,10 @@ abstract class Private_Controller extends Controller_Core {
     }
   }
   
-  public function _gaq_action() {
-    return Router::$controller.'__'.Router::$method;
-  }
-  
   /**
    * Render the loaded template.
    */
-  public function _render() {    
+  public function _render() {
     // Load the template and perform auto rendering.
     $this->template = new View('templates/'. $this->template .'.tpl');
     $this->template->primary = new View('menu/primary');

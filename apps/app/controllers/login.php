@@ -23,8 +23,9 @@ class Login_Controller extends Private_Controller {
       if ($this->auth->login($post['email'], $post['pass'], $post['remember'] ? TRUE : FALSE)) {
         $this->user = $this->auth->get_user();
 
-        if (request::is_ajax())
+        if (request::is_ajax()) {
           response::json(TRUE, 'Logged in successfully.', $this->_user_info());
+        }
         if ($this->user->logins == 1) {
           url::redirect('profile/edit/'. $this->user->id);
         }
@@ -34,9 +35,9 @@ class Login_Controller extends Private_Controller {
         url::redirect($url); // send to user profile page.
       }
       else {
-        if (request::is_ajax())
+        if (request::is_ajax()) {
           response::json(FALSE, 'Invalid login credentials.');
-          
+        }
         // User failed authentication.
         $_SESSION['failed_logins']++;
         if (in_array($_SESSION['failed_logins'], array(3, 6, 9, 12, 15))) {
@@ -46,8 +47,9 @@ class Login_Controller extends Private_Controller {
         $this->form = $post;
       }
     }
-    if (request::is_ajax())
+    if (request::is_ajax()) {
       response::json(FALSE, 'Please log in.', $this->_user_info());
+    }
   }
   
   /**
@@ -55,8 +57,9 @@ class Login_Controller extends Private_Controller {
    */
   public function logout() {
     $this->auth->logout(TRUE);
-    if (request::is_ajax())
+    if (request::is_ajax()) {
       response::json(TRUE, 'Logged out successfully.');
+    }
     url::redirect('login');
   }
   
