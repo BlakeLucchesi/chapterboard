@@ -1,1 +1,9 @@
 .DS_Store
+apps/app/cache/*
+!apps/app/cache/.gitkeep
+apps/app/logs/*
+!apps/app/logs/.gitkeep
+apps/mobile/cache/*
+!apps/mobile/cache/.gitkeep
+apps/mobile/logs/*
+!apps/mobile/.gitkeep
