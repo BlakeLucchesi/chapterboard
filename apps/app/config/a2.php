@@ -71,7 +71,6 @@ $config['rules'] = array(
     // ADD YOUR OWN ALLOW RULES HERE
 
     // Allow switching to a different site_id.
-    array('root', 'site', array('teleport', 'shapeshift', 'root')),
     array('national', 'site', 'teleport', array('Acl_Assert_OR_Argument', array('chapter_id' => 'chapter_id'))),
     array('root'),
 

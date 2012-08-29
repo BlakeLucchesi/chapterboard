@@ -73,9 +73,6 @@ $config['file/backups/(.*)']          = 'file/backups/$1';
 $config['file/([a-zA-Z0-9-_]+)/(.*)'] = 'file/thumb/$1/$2';
 
 # Administration
-$config['teleport']                   = 'session/teleport'; // Change which site you are visiting.
-$config['shapeshift']                 = 'session/shapeshift';
-
 $config['feedback']                   = 'support/feedback';
 
 $config['tests']                      = 'unit_test/index';

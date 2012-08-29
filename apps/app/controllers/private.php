@@ -111,7 +111,7 @@ abstract class Private_Controller extends Controller_Core {
     }
     else if ($this->user->id && $this->user->status) {
       
-      // Setup some sitewide vars $this->site, and $this->sites.
+      // Setup some sitewide vars including: $this->site.
       if ($site_id = $this->session->get('site_id')) {
         $site = ORM::factory('site', $site_id);
         if ($site->loaded) {
@@ -120,11 +120,6 @@ abstract class Private_Controller extends Controller_Core {
       }
       if ( ! $this->site->loaded) {
         $this->site = $this->user->site;
-      }
-      
-      // If we are a root user, set that up, otherwise add google tracking.
-      if ($this->user->has_role('national')) {
-        $this->sites = array($this->user->site_id => 'National Office') + ORM::factory('site')->chapter_select($this->site->chapter_id);
       }
     }
     
