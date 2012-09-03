@@ -1,7 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 /**
- * Login URL for our application.
+ * The following switch statement allows you to configure certain options based on the
+ * environment that the website is being run in.  (Production, Staging, Development).
  */
 switch ($_SERVER['SERVER_NAME']) {
   case 'app.chapterboard.com':
@@ -27,5 +28,9 @@ switch ($_SERVER['SERVER_NAME']) {
     break;
 }
 
+# The gmail email account you are using to relay sms messages
 $config['sms_email'] = '';
 $config['sms_email_password'] = '';
+
+# The email address of the account administrator to which support/feedback emails are sent.
+$config['support_email'] = 'support@example.com';

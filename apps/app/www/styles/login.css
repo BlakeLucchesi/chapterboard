@@ -23,16 +23,10 @@ a img {
   border: none;
 }
 
-#logo {
-  padding: 20px;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  background-color: #5f8bb7;
-}
-
 /* Content Wrap */
 
 #content {
+  padding: 80px 0 0 0;
   background: url(../images/login-bg.gif) 0 -25px repeat-x;
 }
 

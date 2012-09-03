@@ -26,7 +26,7 @@ class Support_Controller extends Private_Controller {
   
   public function _send($template = 'support') {
     if ($body = $this->input->post('body')) {
-      $to = 'support@chapterboard.com';
+      $to = Kohana::config('app.support_email');
       $vars['body'] = $body;
       $vars['id'] = $this->user->id;
       $vars['user'] = $this->user->name();

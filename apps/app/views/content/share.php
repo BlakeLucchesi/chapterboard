@@ -8,7 +8,7 @@
   <div class="split-left">
     <div class="help">
       <p>It's fast, simple and easy. Just fill out the information below to share ChapterBoard with other fraternity or sorority chapters.</p>
-      <p>Thanks! <em>&mdash; The ChapterBoard Team</em></p>
+      <p>Thanks!</p>
     </div>
     <fieldset>
       <?= form::open() ?>

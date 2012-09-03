@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title><?php print html::specialchars($this->title); ?> | ChapterBoard</title>
+    <title><?php print html::specialchars($this->title); ?></title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/images/iphone-icon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ipad-icon.png" />

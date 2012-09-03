@@ -8,9 +8,6 @@
     <?= css::get(); ?>
   </head>
   <body class="<?= Router::$controller?>-<?= Router::$method ?>">
-    <div id="logo">
-      <?= html::anchor(Kohana::config('app.public_url'), html::image('images/logo-tagline.png', 'ChapterBoard')) ?>
-    </div>
     <div id="content">
       <div id="wrap" class="clearfix">
         <div id="wrap-inner">
@@ -20,13 +17,8 @@
     </div>
     <div id="footer">
       <div class="links">
-        <?= html::anchor('http://www.chapterboard.com/privacy-policy', 'Privacy Policy', array('target' => '_blank')) ?>
-        <?= html::anchor('http://www.chapterboard.com/terms-of-service', 'Terms of Service', array('target' => '_blank')) ?>
-        <?= html::anchor(Kohana::config('app.public_url'), sprintf('&copy; %d ChapterBoard LLC', date('Y'))); ?> 
+        <?= html::anchor('http://www.chapterboard.com', 'Powered by ChapterBoard'); ?> 
       </div>
-      <div id="info">
-        ChapterBoard is a communication and organization tool for Fraternity and Sororities.  <?= html::anchor(Kohana::config('app.public_url'), 'Find out more &raquo;') ?>
-      </div>      
     </div> <!-- footer -->
     <?= javascript::get() ?>
   </body>

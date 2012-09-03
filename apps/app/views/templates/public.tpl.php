@@ -23,9 +23,6 @@
             <?php elseif (A2::instance()->allowed($this->site, 'admin')): ?>
               <?= html::primary_anchor('settings', 'Chapter Account') ?>
             <?php endif; ?>
-            <?php if ($this->user->has_role('root')): ?>
-              <?= html::anchor(Kohana::config('app.admin_url'), 'Administrative Site') ?>
-            <?php endif ?>
             &nbsp;
           </span> -->
         </div>

@@ -8,9 +8,6 @@
     <?= css::get(); ?>
   </head>
   <body class="<?= Router::$controller?>-<?= Router::$method ?>">
-    <div id="logo">
-      <?= html::anchor('', html::image('images/logo-tagline.png', 'ChapterBoard')) ?>
-    </div>
     <div id="content">
       <div id="wrap" class="clearfix">
         <div id="wrap-inner">

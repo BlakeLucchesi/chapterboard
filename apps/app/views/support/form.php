@@ -42,8 +42,7 @@
           <p>Additionally, while we prefer responding via email, it’s always best to leave us your phone number and a good time to contact you, just in case we need to get in touch over the phone.</p>
         <?php endif ?>
         <br />
-        <p>Thanks!<br />
-          &mdash; <em>The ChapterBoard Team</em></p>
+        <p>Thanks!</p>
       </div>
     </div>
     <?= form::close() ?>

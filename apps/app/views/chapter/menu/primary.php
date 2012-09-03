@@ -1,8 +1,7 @@
 <div id="primary" class="clearfix fixed-wrapper">
   <ul>
     <li><?= html::primary_anchor('', 'Home') ?></li>
-
-		<li><?= html::primary_anchor('forum', 'Forum') ?></li>
+    <li><?= html::primary_anchor('forum', 'Forum') ?></li>
     <li><?= html::primary_anchor('calendar', 'Calendar') ?></li>
     <?php if (A2::instance()->allowed('recruit', 'access')): ?>
       <li><?= html::primary_anchor('recruitment', 'Recruitment') ?></li>
