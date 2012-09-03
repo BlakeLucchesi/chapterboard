@@ -98,7 +98,6 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
 }
 
 header ul {
@@ -177,10 +176,9 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  text-align: right;
+  clear: both;
+  margin: 25px 0;
 }
 
 @media print, screen and (max-width: 960px) {
