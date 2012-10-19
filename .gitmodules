@@ -1,0 +1,3 @@
+[submodule "modules/email/vendor/swiftmailer"]
+	path = modules/email/vendor/swiftmailer
+	url = git://github.com/swiftmailer/swiftmailer.git
